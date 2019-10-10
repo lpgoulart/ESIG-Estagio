@@ -69,7 +69,19 @@ body {
   color: #333;
 }
 
-
+.sidebar .nav-link:hover {
+  animation-name: shake;
+  animation-duration: .5s;
+  animation-iteration-count: 2;
+}
+.turn-gear {
+  transform: rotate(0deg);
+  transition: 1s;
+}
+.turn-gear:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+}
 .hide {
   display: none;
   transition: 1s;
@@ -232,17 +244,3 @@ body {
   }
 }
 
-.sidebar .nav-link:hover {
-  animation-name: shake;
-  animation-duration: .5s;
-  animation-iteration-count: 2;
-}
-
-.turn-gear {
-  transform: rotate(0deg);
-  transition: 1s;
-}
-.turn-gear:hover {
-  transform: rotate(360deg);
-  transition: 1s;
-}
